@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+:root{
+    /* 컬러 */
+    --primary-color: #695DF2;           /* 메인 색 */
+    --primary-color-effect: #695DF2;    /* 메인 색 효과 (호버) */
+    --primary-color-contrast: #fff;     /* 메인 색 반대 (글씨등) */
+    
+    --disabled-color: #999;     /* 비활성화 색 */
+    --active-color: #28a745;    /* 활성화 색 */
+    --danger-color: #CF3A2E;    /* 경고 색 */
+    --alert-color: #ffa500;     /* 알림 색 */
+
+    --base-color-light: #f5f5f5;    /* 밝은 base-color */
+    --base-color-mid: #e9e9e9;      /* 중간 base-color */
+    --base-color-dark: #222222;      /* dark base-color */
+    --base-color-mid-dark: #262626;   /* mid-dark base-color */
+    --base-color-minus: #EDF2FA;      /* 손실 base-color */
+    
+    --border-color-light: #ffffff;      /* 밝은 테두리 색 */
+    --border-color-default: #ddd;    /* 기본 테두리 색 */
+
+    --background-default: rgb(243, 242, 254);       /* '이미지 로딩 전'등의 default 배경 */
+    --background-effect: rgba(243, 242, 254, 0.7);  /* 호버 효과 등의 옅은 배경 */
+    
+    --font-color-default: #222; /* 기본 글자 색 */
+    --font-color-sub: #666;     /* 서브 글자 색 */
+    --font-color-mid: #888;     /* 서브 글자 색 */
+    --font-color-light: #fff;     /* 서브 글자 색 */
+    --font-color-placeholder: #aaa;
+
+    /* 폰트 */
+    --font-size-xxx-large: 4rem;
+    --font-size-xx-large: 2.5rem;
+    --font-size-x-large: 2.1rem;
+    --font-size-large: 1.9rem;
+    --font-size-mid: 1.7rem;
+    --font-size-small: 1.5rem;
+    --font-size-x-small: 1.3rem;
+    --font-size-xx-small: 1.1rem;
+
+    --font-w-light: 200; /*light */
+    --font-w-regular: 300; /*regular */
+    --font-w-mid: 500; /*mid */
+    --font-w-bold: 600; /*semibold */
+    --line-height: 1.6;
+
+    /* 사이즈 */
+    --border-radius-x-small: 0.4rem;
+    --border-radius-small: 0.8rem;    /* 레디우스 크기 조정 (소) */
+    --border-radius-mid: 1.2rem;        /* 레디우스 크기 조정 (중) */
+    --border-radius-large: 1.6rem;      /* 레디우스 크기 조정 (대) */
+    --border-radius-full: 100rem;     /* 레디우스 크기 조정 (100%) */
+
+    /* 여백 */
+    --space-x-small: 0.4rem;
+    --space-small: 0.8rem;
+    --space-mid: 1.2rem;
+    --space-large: 1.6rem;
+    --space-x-large: 2.4rem;
+    --space-xx-large: 3.2rem;
+    --space-xxx-large: 4rem;
+
+    /* transition 속도 */
+    --transition-fast: 0.12s;
+    --transition-default: 0.2s;
+    --transition-slow: 0.3s;
+    --transition-slower: 0.5s;
+
+    /* 기타 */
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --box-shadow-mid: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+    /* 계산 목적 변수 */
+    --header-height: 7rem;
+    --bottomMenu-height: 8rem;
+    --footer-height: 10rem;
+    --min-width: 250px;
+    --inner-width: 1080px;
+}
+
+/* ---------- 기본 set START ---------- */
+/* 웹폰트 깨짐 방지 */
+p, span, a, h1, h2, h3, h4, h5, h6, ul, li, tr, td, figure, blockquote{
+    transform: skew(0.1deg);
+}
+html{
+	font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--base-color-mid-dark);
+}
+body{
+    font-size: 1.6rem;
+	letter-spacing: -0.03rem;
+    color: #fff;
+    line-height: var(--line-height);
+	font-weight: var(--font-w-regular);
+}
+img{
+    width: 100%;
+    /* image-rendering: crisp-edges; */
+}
+button{ 
+    background-color: transparent;
+    padding: 0.5em 1em;
+    line-height: 0;
+    outline: none;
+    border-radius: var(--border-radius-x-small);
+}
+button, a{
+    user-select: none;
+}
+button:hover, a:hover {
+    opacity: .7;
+}
+input, progress{
+    accent-color: var(--primary-color);
+}
+input, textarea, select{
+    /* padding: 0.8em var(--space-large); */
+    width: 100%;
+    min-height: 4.8rem;
+    padding: var(--space-mid) var(--space-large);
+    color: var(--font-color-default);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-w-regular);
+    background-color: var(--base-color-light);
+    border: 0;
+    border-radius: var(--border-radius-x-small);
+    box-sizing: border-box;
+}
+input:read-only {
+    border: 0;
+    background-color: var(--base-color-light);
+}
+input:focus, textarea:focus, select:focus{
+    outline-color: var(--primary-color);
+}
+input[type="checkbox"], input[type="radio"]{
+    display: flex;
+    min-width: 2.4rem;
+    max-width: 2.4rem;
+    min-height: 2.4rem;
+    max-height: 2.4rem;
+    padding: unset;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    border-radius: var(--border-radius-full);
+    background-repeat: no-repeat;
+}
+input::placeholder,
+textarea::placeholder{
+    color: var(--font-color-placeholder);
+    font-size: var(--font-size-small);
+}
+textarea {
+    resize: none;
+    min-height: 14rem;
+}
+form .inputWrap+.inputWrap {
+    margin-top: var(--space-large);
+}
+form .inputWrap.c_flex_wrap {
+    gap: var(--space-large);
+}
+.btn-primary {
+    padding: 2rem;
+    min-width: 18rem;
+    min-height: 4.4rem;
+    border: .1rem solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius-full);
+}
+.btn-size-mid {
+    height: 5.2rem;
+    border-radius: var(--border-radius-small);
+}
+.c_section {
+    position: relative;
+    padding: 8rem 0;
+    width: 100%;
+}
+.bg_dark {
+    color: #fff;
+    background: var(--base-color-dark);
+}
+.bg_middark {
+    color: #fff;
+    background: var(--base-color-mid-dark);
+}
+.bg_gray {
+    background: var(--base-color-light);
+}
+.c_inner {
+    position: relative;
+    max-width: var(--inner-width);
+    width: 90%;
+    margin: 0 auto;
+}
+.c_inner_wide {
+    width: 100%;
+}
+.c_flex_wrap {
+    display: flex;
+    align-items: center;
+}
+.contsTit01 {
+    margin-bottom: var(--space-mid);
+    font-size: var(--font-size-xx-large);
+    text-align: center;
+    letter-spacing: .5rem;
+}
+.contsTit02 {
+    margin-bottom: var(--space-small);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-w-mid);
+    letter-spacing: .5rem;
+    color: var(--font-color-mid); 
+}
+.contsTit03 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-w-bold);
+}
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 9px;
+    }
+}
+/* ---------- 기본 set END ---------- */
+
+
+/* 아이콘 START */
+[class*='icon'] {
+    display: block;
+}
+.icon_mail {
+    width: 2rem;
+    height: 2rem;
+    background: url("~@/assets/images/common/icon_mail.svg")no-repeat center/contain;
+}
+.icon_call {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url("~@/assets/images/common/icon_call.svg")no-repeat center/contain;
+}
+.icon_linkedin {
+    width: 2rem;
+    height: 2rem;
+    background: url("~@/assets/images/common/icon_linkedin.svg")no-repeat center/contain;
+}
+.icon_arrow {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url("~@/assets/images/common/icon_arrow.svg")no-repeat center/contain;
+}
+.icon_morebtn_arrow {
+    width: 2rem;
+    height: 2rem;
+    background: url("~@/assets/images/common/morebtn_arrow.svg")no-repeat  center/contain;
+}
+.icon_morebtn_arrow.reverse {
+    transform: rotate(180deg);
+}
+/* 아이콘 END */
+
+.c_more_btn {
+    gap: .6rem;
+    align-items: center;
+    padding: 2rem 0;
+    font-weight: var(--font-w-mid);
+    color: var(--primary-color);
+}
+.c_btn-primary {
+    color: var(--primary-color);
+}
+main {
+    margin-top: var(--header-height);
+}

@@ -1,0 +1,45 @@
+/* HEADER START */
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: rgba(3, 3, 3, 0.5);
+    backdrop-filter: blur(10px);
+    color: var(--font-color-light);
+}
+header .c_inner {
+    justify-content: space-between;
+    gap: 12rem;
+    height: 100%;
+}
+header .logo {
+    width: 5.4rem;
+    height: auto;
+}
+header .gnb {
+    height: 100%;
+    font-size: var(--font-size-mid);
+}
+header .gnb ul li a {
+    display: block;
+    line-height: var(--header-height);
+    opacity: .5;
+}
+header .gnb ul {
+    gap: 6rem;
+}
+header .gnb ul .on a {
+    opacity: 1;
+}
+@media screen and (max-width: 1000px) {
+    header .gnb {
+        display: none;
+    }
+    header .logo {
+        margin: 0 auto;
+    }
+}
+/* HEADER END */
