@@ -222,6 +222,9 @@ form .inputWrap.c_flex_wrap {
     font-size: var(--font-size-large);
     font-weight: var(--font-w-bold);
 }
+.text-align-center {   
+    text-align: center;
+}
 @media screen and (max-width: 800px) {
     html{
         font-size: 9px;

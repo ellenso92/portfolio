@@ -2,7 +2,7 @@
 	<Header />
     <main class="projectDetail nuovoseoul">
 		<section class="c_section overview">
-			<div class="blur"></div>
+			<div class="blur bk"></div>
 			<div class="c_inner c_flex_wrap">
 				<div class="txtBox"> 
 					<div class="projectTitleWrap">
@@ -50,8 +50,10 @@
 					<div class="flexBox">
 						<img src="@/assets/images/project/nuovoseoul/persona01.png" alt="persona character" />
 						<div class="txtWrap">
-							<h4 class="name">Ava</h4>
-							<p class="info">28year old / graphic designer living in Seoul</p>
+							<div class="nameWrap">
+								<h4 class="name">Ava</h4>
+								<p class="info">28year old / graphic designer living in Seoul</p>
+							</div>
 							<ul>
 								<li>
 									<p class="tit">BIO</p>
@@ -75,8 +77,10 @@
 					<div class="flexBox">
 						<img src="@/assets/images/project/nuovoseoul/persona02.png" alt="persona character" />
 						<div class="txtWrap">
-							<h4 class="name">Tom</h4>
-							<p class="info">42year old / business man living in NewYork</p>
+							<div class="nameWrap">
+								<h4 class="name">Tom</h4>
+								<p class="info">42year old / business man living in NewYork</p>
+							</div>
 							<ul>
 								<li>
 									<p class="tit">BIO</p>
@@ -103,69 +107,114 @@
 		<section class="c_section webResponsive">
 			<div class="c_inner_wide">
 				<div class="contsTitWrap">
-					<h3 class="contsTit02">MVP FUNCTIONAL REQUIREMENTS</h3>
+					<h3 class="contsTit02 text-align-center">MVP FUNCTIONAL REQUIREMENTS</h3>
 				</div>
 				<div class="webLayout">
 					<div class="titWrap">
 						<h4>Exhibition Information</h4>
 						<p>Provide details about current and upcoming exhibitions.</p>
 					</div>
-					<div>
+					<div class="imgWrap">
 						<img src="@/assets/images/project/nuovoseoul/mvp_ex_web.png" alt="" />
-						<div class=""
 					</div>
 				</div>
-				<div class="c_flex_wrap">
-					<div class="flexBox">
-						<h4>Ease of Use</h4>
-						<p>Users need a payment service that is easy to understand and use. This includes a simple sign-up process, intuitive navigation, and clear instructions for performing transactions.</p>
+			</div>
+			<div class="c_inner">
+				<div class="wmLayout c_flex_wrap">
+					<div class="titWrap">
+						<h4>Search & Filtering</h4>
+						<p>Allow users to easily find artworks or artists they are interested in through search functionality and filters.</p>
 					</div>
-					<div class="flexBox">
-						<h4>Accessibility</h4>
-						<p>The service should be accessible across various devices (mobile, desktop) and platforms (iOS, Android), enabling users to make payments whenever they want and from wherever they are.</p>
+					<div class="w_img">
+						<img src="@/assets/images/project/nuovoseoul/mvp_sf_web.jpg" alt="" />
 					</div>
-					<div class="flexBox">
-						<h4>Customer Support</h4>
-						<p>If issues arise during the use of the service, users need responsive customer support that can help them resolve problems quickly.</p>
+					<div class="m_img">
+						<img src="@/assets/images/project/nuovoseoul/mvp_sf_mo.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="c_inner">
+				<div class="wmLayout c_flex_wrap">
+					<div class="titWrap">
+						<h4>Artwork & Artist Information</h4>
+						<p>Offer comprehensive information about each piece of work and artist.</p>
+					</div>
+					<div class="w_img">
+						<img src="@/assets/images/project/nuovoseoul/mvp_aa_web.jpg" alt="" />
+					</div>
+					<div class="m_img">
+						<img src="@/assets/images/project/nuovoseoul/mvp_aa_mo.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="c_inner">
+				<div class="wmLayout c_flex_wrap">
+					<div class="titWrap">
+						<h4>Ticket Booking System</h4>
+						<p>Implement a straightforward system where users can book tickets for upcoming exhibitions directly from the website.</p>
+					</div>
+					<div class="w_img">
+						<img src="@/assets/images/project/nuovoseoul/mvp_sf_web.jpg" alt="" />
+					</div>
+					<div class="m_img">
+						<img src="@/assets/images/project/nuovoseoul/mvp_sf_mo.jpg" alt="" />
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<!--section class="c_section solve">
+		<section class="c_section nuovo_bi">
+			<div class="c_inner c_flex_wrap">
+			</div>
+		</section>
+		<section class="c_section fonts">
 			<div class="c_inner">
-				<div class="contsTitWrap center">
-					<h3 class="contsTit02">HOW WE SOLVE?</h3>
+				<div class="contsTitWrap">
+					<h3 class="contsTit02">FONTS</h3>
 				</div>
-				<div class="c_flex_wrap">
-					<div class="txtBox"> 
-						<p>Simplified Registration Process: Provide a simple and intuitive sign-up form that only asks for necessary information. Eliminate unnecessary steps and assist users in easily entering their information.</p>
+				<div class="fontWrap noto c_flex_wrap">
+					<div class="name c_flex_wrap">
+						<span>Noto Sans KR</span>
+						<span class="line"></span>
+						<span class="lang">Korean</span>
 					</div>
-					<div class="imgBox">
-						<img src="@/assets/images/project/nuovoseoul/solve01.png" alt="harut app screen" />
+					<div class="imgWrap">
+						가
+					</div>
+					<div class="txtWrap c_flex_wrap">
+						<span class="font-w-regular">Regular</span>
+						<span class="font-w-medium">Medium</span>
+						<span class="font-w-bold">Bold</span>
+						<p>가나다라마바사아자차카타파하</p>
 					</div>
 				</div>
-				<div class="c_flex_wrap web">
-					<div class="imgBox">
-						<img src="@/assets/images/project/nuovoseoul/solve02.png" alt="harut app screen" />
+				<div class="fontWrap roboto c_flex_wrap">
+					<div class="name c_flex_wrap">
+						<span>Roboto</span>
+						<span class="line"></span>
+						<span class="lang">English, Number</span>
 					</div>
-					<div class="txtBox"> 
-						<p>The elements like menus and buttons should be well-organized so that users can navigate easily within the website. Also, key features (e.g., 'Make Payment') should be clearly located in an easy-to-access place.</p>
+					<div class="imgWrap">
+						Aa
+					</div>
+					<div class="txtWrap c_flex_wrap">
+						<span class="font-w-regular">Regular</span>
+						<span class="font-w-medium">Medium</span>
+						<span class="font-w-bold">Bold</span>
+						<p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQq<br/>RrSsTtUuVvWwXxYyZz<br/>0123456789</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="c_section bottom_screenshot">
-			<div class="">
-				<img src="@/assets/images/project/nuovoseoul/bottom_screenshot.png" alt="" />
+			<div>
+				<img src="@/assets/images/project/nuovoseoul/bottom_screenshot.png" alt="preview screen shot" />
 			</div>
-		</section-->
+		</section>
 		<section class="c_section preview bg_middark">
 			<div class="c_inner c_flex_wrap">
 				<p>Next Project</p>
 				<p class="nextProject">HARUT</p>
 				<div class="c_flex_wrap btnWrap">
-					<router-link to="/TonPay" class="c_more_btn c_flex_wrap"><span class="icon_morebtn_arrow reverse"></span>Prev</router-link>
 					<router-link to="/Harut" class="c_more_btn c_flex_wrap">Next<span class="icon_morebtn_arrow"></span></router-link>
 				</div>
 			</div>

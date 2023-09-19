@@ -1,11 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 /* project공통 START */
 .projectDetail {
     background: #fff;
     color: var(--font-color-default);
-}
-.projectDetail .overview {
-    background-color:var(--base-color-dark);
-    background: url("~@/assets/images/project/harut/overview_bg.jpg")no-repeat center/cover;
 }
 .projectDetail .overview .blur {
     position: absolute;
@@ -16,6 +13,9 @@
     height: 100%;
     background-color: rgb(255 255 255 / 0.2);
     backdrop-filter: blur(6px);
+}
+.projectDetail .overview .blur.bk {
+    background-color: rgba(0, 0, 0, 0.406);
 }
 .projectDetail .overview .c_inner {
     gap: 10rem;  
@@ -35,9 +35,6 @@
 .projectDetail .overview .projectTitleWrap .subTitle {
     margin-top: var(--space-small);
     font-size: var(--font-size-large);
-}
-.projectDetail .overview .projectDsc {
-    color: var(--font-color-sub);
 }
 .projectDetail .overview .infoWrap {
     margin-top: var(--space-xx-large);
@@ -205,7 +202,6 @@
     padding: unset;
     width: 100%;
     height: 100%;
-
 }
 .projectDetail .c_section.bottom_screenshot img {
     display: block;
@@ -302,13 +298,30 @@
         margin: 0 auto var(--space-large) auto;
     }
 }
+/* HARUT START */
+.projectDetail.harut .overview {
+    background-color:var(--base-color-dark);
+    background: url("~@/assets/images/project/harut/overview_bg.jpg")no-repeat center/cover;
+}
+/* HARUT END */
 /* TONPAY START */
+.projectDetail.tonpay .overview {
+    color: #fff;
+    background: linear-gradient(180deg, rgba(185,159,239,1) 35%, rgba(90,61,149,1) 100%);
+}
+.projectDetail.tonpay .overview .object {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 80rem;
+    background: url("~@/assets/images/project/tonpay/overview_oj.png")no-repeat center/cover;
+}
 .projectDetail.tonpay .overview .c_inner {
     align-items: flex-start;
 }
 .projectDetail.tonpay .overview .imgBox {
     position: relative;
-    width: 100%;
     height: 40rem;
 }
 .projectDetail.tonpay .overview .imgBox img {
@@ -347,3 +360,166 @@
     }
 }
 /* TONPAY END */
+
+/* NUOVOSEOUL START */
+.projectDetail.nuovoseoul {
+    color: #fff;
+    background: var(--base-color-dark);
+}
+.nuovoseoul .overview {
+    color: #fff;
+    background: url("~@/assets/images/project/nuovoseoul/overview_bg.jpg")no-repeat center/cover;
+}
+.nuovoseoul .overview .imgBox img {
+    width: 100%;
+    height: auto;
+    box-shadow: var(--box-shadow);
+}
+.nuovoseoul .persona .c_flex_wrap {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10rem;
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox {
+    width: calc((100% - 10rem)/2);
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox:nth-child(2) {
+    margin-top: 20rem;
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox img {
+    max-width: 20rem;
+    height: auto;
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap {
+    overflow: hidden;
+    border-radius: var(--border-radius-large);
+    background: var(--base-color-mid-dark);
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap .name {
+    font-size: var(--font-size-x-large);
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap .nameWrap {
+    padding: var(--space-x-large);
+    background: #171717;
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul {
+    padding: var(--space-x-large);
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul li+li {
+    margin-top: var(--space-x-large);
+}
+.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul li .tit {
+    font-weight: var(--font-w-mid);
+    color: var(--font-color-mid);
+}
+.nuovoseoul .webResponsive .c_inner_wide {
+    height: 100%;   
+}
+.nuovoseoul .webResponsive .c_inner_wide .webLayout {
+    padding: 10%;
+    background: url("~@/assets/images/project/nuovoseoul/mvp_ex_bg01.png")no-repeat center/cover;
+}
+.nuovoseoul .webResponsive [class*="c_inner"]+[class*="c_inner"] {
+    margin-top: 10rem;
+}
+.wmLayout {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.wmLayout .w_img {
+    width: 62%;
+}
+.wmLayout .m_img {
+    width: 32%;
+}
+.nuovoseoul .webResponsive .titWrap {
+    margin-bottom: var(--space-xxx-large);
+}
+.nuovoseoul .webResponsive .titWrap h4 {
+    margin-bottom: var(--space-small);
+    font-size: var(--font-size-xx-large);
+}
+.nuovoseoul .webResponsive .titWrap p {
+    color: var(--base-color-mid);
+}
+.nuovoseoul .webResponsive img {
+    border-radius: var(--border-radius-large);
+}
+.nuovoseoul .nuovo_bi .c_inner {
+    height: 20rem;
+    background: url("~@/assets/images/project/nuovoseoul/nuovoseoulbg.svg")no-repeat center/contain;
+}
+.nuovoseoul .fonts .fontWrap {
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.nuovoseoul .fonts .fontWrap.noto {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.nuovoseoul .fonts .fontWrap.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.nuovoseoul .fonts .fontWrap+.fontWrap {
+    margin-top: var(--space-xxx-large);
+}
+.nuovoseoul .fonts .name {
+    gap: 1.8rem;
+    width: 100%;
+}
+.nuovoseoul .fonts .name .line {
+    height: 1.4rem;
+    border-left: .1rem solid var(--font-color-sub);
+}
+.nuovoseoul .fonts .name .lang {
+    color: var(--font-color-mid);
+}
+.nuovoseoul .fonts .imgWrap {
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center;
+    font-size: var(--font-size-xxx-large);
+    background: var(--base-color-mid-dark);
+    border-radius: var(--border-radius-large);
+}
+.nuovoseoul .fonts .txtWrap {
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+}
+.nuovoseoul .fonts .txtWrap .font-w-regular {
+    font-weight: var(--font-w-regular);
+}
+.nuovoseoul .fonts .txtWrap .font-w-medium {
+    font-weight: var(--font-w-mid);
+}
+.nuovoseoul .fonts .txtWrap .font-w-bold {
+    font-weight: var(--font-w-bold);
+}
+.nuovoseoul .fonts .txtWrap p {
+    width: 100%;
+    color: var(--font-color-mid);
+}
+@media screen and (max-width: 600px) {
+    .nuovoseoul .persona .c_flex_wrap {
+        flex-direction: column;
+        gap: var(--space-xxx-large);
+    }
+    .nuovoseoul .persona .c_flex_wrap .flexBox:nth-child(2) {
+        margin-top: unset;
+    }
+    .nuovoseoul .persona .c_flex_wrap .flexBox {
+        width: 100%;
+    }
+    .wmLayout {
+        flex-direction: column;
+    }
+    .wmLayout .w_img {
+        width: 100%;
+    }
+    .wmLayout .m_img {
+        width: unset;
+        max-width: 30rem;
+    }
+}
+/* NUOVOSEOUL END */

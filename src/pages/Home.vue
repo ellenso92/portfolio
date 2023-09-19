@@ -41,8 +41,8 @@
 						<p class="kind">Responsive Web</p>
 						<router-link to="" class="c_more_btn c_flex_wrap">more<span class="icon_morebtn_arrow"></span></router-link>
 					</div>
-					<router-link to="" class="thumbnailWrap">
-						<img src="@/assets/images/home/tonpay.png" alt="project01_harut screenshot" />
+					<router-link to="/TonPay" class="thumbnailWrap">
+						<img src="@/assets/images/home/tonpay.png" alt="tonpay" />
 					</router-link>
 				</div>
 			</div>
@@ -57,8 +57,8 @@
 						<p class="kind">Resonsive Web</p>
 						<router-link to="" class="c_more_btn c_flex_wrap">more<span class="icon_morebtn_arrow"></span></router-link>
 					</div>
-					<router-link to="" class="thumbnailWrap">
-						<img src="@/assets/images/home/nuovoseoul.png" alt="project01_harut screenshot" />
+					<router-link to="/NuovoSeoul" class="thumbnailWrap">
+						<img src="@/assets/images/home/nuovoseoul.png" alt="nuovo seoul" />
 					</router-link>
 				</div>
 			</div>

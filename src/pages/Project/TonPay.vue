@@ -2,7 +2,8 @@
 	<Header />
     <main class="projectDetail tonpay">
 		<section class="c_section overview">
-			<div class="blur"></div>
+			<div class="object"></div>
+			<div class="blur bk"></div>
 			<div class="c_inner c_flex_wrap">
 				<div class="txtBox"> 
 					<div class="projectTitleWrap">
@@ -16,11 +17,11 @@
 						</div>
 						<div class="info">
 							<p class="tit">Team</p>
-							<p class="dsc">1ProductManager<br />1Designer<br />1Publisher<br />2Developer</p>
+							<p class="dsc">1PM<br />1Designer<br />1Publisher<br />2Developer</p>
 						</div>
 						<div class="info">
 							<p class="tit">Role</p>
-							<p class="dsc">Researcher,<br/>Web/Mobile Designer</p>
+							<p class="dsc">Researcher,<br/>Designer</p>
 						</div>
 						<div class="info">
 							<p class="tit">Duration</p>
@@ -161,8 +162,7 @@
 				<p>Next Project</p>
 				<p class="nextProject">NUOVO SEOUL</p>
 				<div class="c_flex_wrap btnWrap">
-					<router-link to="/NuovoSeoul" class="c_more_btn c_flex_wrap"><span class="icon_morebtn_arrow reverse"></span>Prev</router-link>
-					<router-link to="/Tonpay" class="c_more_btn c_flex_wrap">Next<span class="icon_morebtn_arrow"></span></router-link>
+					<router-link to="/NuovoSeoul" class="c_more_btn c_flex_wrap">Next<span class="icon_morebtn_arrow"></span></router-link>
 				</div>
 			</div>
 		</section>

@@ -268,7 +268,6 @@
 				<p>Next Project</p>
 				<p class="nextProject">T-ON PAY</p>
 				<div class="c_flex_wrap btnWrap">
-					<router-link to="/Harut" class="c_more_btn c_flex_wrap"><span class="icon_morebtn_arrow reverse"></span>Prev</router-link>
 					<router-link to="/Tonpay" class="c_more_btn c_flex_wrap">Next<span class="icon_morebtn_arrow"></span></router-link>
 				</div>
 			</div>
