@@ -229,8 +229,6 @@
     }
     .projectDetail .overview .infoWrap {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
     .projectDetail .overview .infoWrap .info .tit {
         color: var(--primary-color);
@@ -366,60 +364,60 @@
     color: #fff;
     background: var(--base-color-dark);
 }
-.nuovoseoul .overview {
+.projectDetail.nuovoseoul .overview {
     color: #fff;
     background: url("~@/assets/images/project/nuovoseoul/overview_bg.jpg")no-repeat center/cover;
 }
-.nuovoseoul .overview .imgBox img {
+.projectDetail.nuovoseoul .overview .imgBox img {
     width: 100%;
     height: auto;
     box-shadow: var(--box-shadow);
 }
-.nuovoseoul .persona .c_flex_wrap {
+.projectDetail.nuovoseoul .persona .c_flex_wrap {
     justify-content: space-between;
     align-items: flex-start;
     gap: 10rem;
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox {
     width: calc((100% - 10rem)/2);
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox:nth-child(2) {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox:nth-child(2) {
     margin-top: 20rem;
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox img {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox img {
     max-width: 20rem;
     height: auto;
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap {
     overflow: hidden;
     border-radius: var(--border-radius-large);
     background: var(--base-color-mid-dark);
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap .name {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap .name {
     font-size: var(--font-size-x-large);
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap .nameWrap {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap .nameWrap {
     padding: var(--space-x-large);
-    background: #171717;
+    background: var(--base-color-deep-dark);
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul {
     padding: var(--space-x-large);
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul li+li {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul li+li {
     margin-top: var(--space-x-large);
 }
-.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul li .tit {
+.projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox .txtWrap ul li .tit {
     font-weight: var(--font-w-mid);
     color: var(--font-color-mid);
 }
-.nuovoseoul .webResponsive .c_inner_wide {
+.projectDetail.nuovoseoul .webResponsive .c_inner_wide {
     height: 100%;   
 }
-.nuovoseoul .webResponsive .c_inner_wide .webLayout {
+.projectDetail.nuovoseoul .webResponsive .c_inner_wide .webLayout {
     padding: 10%;
     background: url("~@/assets/images/project/nuovoseoul/mvp_ex_bg01.png")no-repeat center/cover;
 }
-.nuovoseoul .webResponsive [class*="c_inner"]+[class*="c_inner"] {
+.projectDetail.nuovoseoul .webResponsive [class*="c_inner"]+[class*="c_inner"] {
     margin-top: 10rem;
 }
 .wmLayout {
@@ -433,82 +431,87 @@
 .wmLayout .m_img {
     width: 32%;
 }
-.nuovoseoul .webResponsive .titWrap {
+.projectDetail.nuovoseoul .webResponsive .titWrap {
     margin-bottom: var(--space-xxx-large);
 }
-.nuovoseoul .webResponsive .titWrap h4 {
+.projectDetail.nuovoseoul .webResponsive .titWrap h4 {
     margin-bottom: var(--space-small);
     font-size: var(--font-size-xx-large);
 }
-.nuovoseoul .webResponsive .titWrap p {
-    color: var(--base-color-mid);
+.projectDetail.nuovoseoul .webResponsive .titWrap p {
+    color: var(--font-color-mid);
 }
-.nuovoseoul .webResponsive img {
+.projectDetail.nuovoseoul .webResponsive img {
     border-radius: var(--border-radius-large);
 }
-.nuovoseoul .nuovo_bi .c_inner {
+.projectDetail.nuovoseoul .nuovo_bi .c_inner {
     height: 20rem;
     background: url("~@/assets/images/project/nuovoseoul/nuovoseoulbg.svg")no-repeat center/contain;
 }
-.nuovoseoul .fonts .fontWrap {
+.projectDetail.nuovoseoul .fonts .fontWrap {
     flex-wrap: wrap;
     gap: 2rem;
 }
-.nuovoseoul .fonts .fontWrap.noto {
+.projectDetail.nuovoseoul .fonts .fontWrap.noto {
     font-family: 'Noto Sans KR', sans-serif;
 }
-.nuovoseoul .fonts .fontWrap.roboto {
+.projectDetail.nuovoseoul .fonts .fontWrap.roboto {
     font-family: 'Roboto', sans-serif;
 }
-.nuovoseoul .fonts .fontWrap+.fontWrap {
+.projectDetail.nuovoseoul .fonts .fontWrap+.fontWrap {
     margin-top: var(--space-xxx-large);
 }
-.nuovoseoul .fonts .name {
-    gap: 1.8rem;
+.projectDetail.nuovoseoul .fonts .name {
+    gap: 1rem;
     width: 100%;
+    font-size: var(--font-size-large);
 }
-.nuovoseoul .fonts .name .line {
+.projectDetail.nuovoseoul .fonts .name .line {
     height: 1.4rem;
     border-left: .1rem solid var(--font-color-sub);
 }
-.nuovoseoul .fonts .name .lang {
+.projectDetail.nuovoseoul .fonts .name .lang {
     color: var(--font-color-mid);
+    font-size: var(--font-size-mid);
 }
-.nuovoseoul .fonts .imgWrap {
+.projectDetail.nuovoseoul .fonts .imgWrap {
     width: 10rem;
     height: 10rem;
     line-height: 10rem;
     text-align: center;
     font-size: var(--font-size-xxx-large);
-    background: var(--base-color-mid-dark);
+    background: var(--base-color-deep-dark);
     border-radius: var(--border-radius-large);
 }
-.nuovoseoul .fonts .txtWrap {
+.projectDetail.nuovoseoul .fonts .txtWrap {
     flex-wrap: wrap;
-    gap: 2rem 4rem;
+    gap: 1rem 4rem;
 }
-.nuovoseoul .fonts .txtWrap .font-w-regular {
+.projectDetail.nuovoseoul .fonts .txtWrap .font-w-regular {
     font-weight: var(--font-w-regular);
 }
-.nuovoseoul .fonts .txtWrap .font-w-medium {
+.projectDetail.nuovoseoul .fonts .txtWrap .font-w-medium {
     font-weight: var(--font-w-mid);
 }
-.nuovoseoul .fonts .txtWrap .font-w-bold {
+.projectDetail.nuovoseoul .fonts .txtWrap .font-w-bold {
     font-weight: var(--font-w-bold);
 }
-.nuovoseoul .fonts .txtWrap p {
+.projectDetail.nuovoseoul .fonts .txtWrap p {
     width: 100%;
     color: var(--font-color-mid);
 }
 @media screen and (max-width: 600px) {
-    .nuovoseoul .persona .c_flex_wrap {
+    .projectDetail .overview .imgBox {
+        width: 100%;
+    }
+    .projectDetail.nuovoseoul .persona .c_flex_wrap {
         flex-direction: column;
         gap: var(--space-xxx-large);
     }
-    .nuovoseoul .persona .c_flex_wrap .flexBox:nth-child(2) {
+    .projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox:nth-child(2) {
         margin-top: unset;
     }
-    .nuovoseoul .persona .c_flex_wrap .flexBox {
+    .projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox {
         width: 100%;
     }
     .wmLayout {
