@@ -2,12 +2,11 @@
   <router-view/>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <TopButton />
 </template>
 
-<script>
-
-
-
+<script setup>
+import TopButton from '@/components/TopButton.vue';
 </script>
 
 <style>

@@ -1,0 +1,42 @@
+<template>
+	<router-link to="" id="scroll-btn"> 
+		TOP
+	</router-link>
+</template>
+ 
+<script setup>
+ const scrollTop = function () {
+  // create HTML button element
+  const scrollBtn = document.createElement("button");
+  scrollBtn.innerHTML = "TOP"; // 변경된 부분: 버튼 내용을 "TOP"으로 설정
+  scrollBtn.setAttribute("id", "scroll-btn");
+  document.body.appendChild(scrollBtn);
+  
+  // hide/show button based on scroll distance
+  const scrollBtnDisplay = function () {
+    window.scrollY > window.innerHeight
+      ? scrollBtn.classList.add("show")
+      : scrollBtn.classList.remove("show");
+  };
+  
+  window.addEventListener("scroll", scrollBtnDisplay);
+  
+  // scroll to top when button clicked
+  const scrollWindow = function () {
+    if (window.scrollY != 0) {
+      setTimeout(function () {
+        window.scrollTo(0, window.scrollY - 50);
+        scrollWindow();
+      }, 10);
+    }
+  };
+  
+  	scrollBtn.addEventListener("click", scrollWindow);
+};
+
+scrollTop();
+
+</script>
+
+<style scoped src="@/assets/css/common/footer.css">
+</style>

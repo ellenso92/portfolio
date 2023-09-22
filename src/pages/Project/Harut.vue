@@ -239,6 +239,14 @@
 				<img src="@/assets/images/project/harut/lofiwireframe.png" alt="competitor screen" />
 			</div>
 		</section>
+		<section class="c_section prototype">
+			<div class="c_inner">
+				<div class="contsTitWrap center">
+					<h3 class="contsTit02">PROTOTYPE</h3>
+				</div>
+				<img src="@/assets/images/project/harut/prototype.png" alt="competitor screen" />
+			</div>
+		</section>
 		<section class="c_section bi">
 			<div class="c_inner">
 				<div class="contsTitWrap center">

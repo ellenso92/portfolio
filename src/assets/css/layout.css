@@ -4,7 +4,7 @@
     background: #fff;
     color: var(--font-color-default);
 }
-.projectDetail .overview .blur {
+.blur {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     background-color: rgb(255 255 255 / 0.2);
     backdrop-filter: blur(6px);
 }
-.projectDetail .overview .blur.bk {
+.blur.bk {
     background-color: rgba(0, 0, 0, 0.406);
 }
 .projectDetail .overview .c_inner {
@@ -52,7 +52,6 @@
     width: calc(100% - 10rem - 44% );
 }
 .projectDetail .overview .imgBox img {
-    width: calc((100% - 2rem)/2);
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow);
 }
@@ -234,7 +233,7 @@
         color: var(--primary-color);
     }
     .projectDetail .overview .imgBox {
-        width: 90%;
+        width: 100%;
     }
     .projectDetail .c_section .contsTitWrap {
         margin-bottom: var(--space-x-large);
@@ -301,6 +300,13 @@
     background-color:var(--base-color-dark);
     background: url("~@/assets/images/project/harut/overview_bg.jpg")no-repeat center/cover;
 }
+.projectDetail.harut .overview .imgBox {
+    justify-content: center;
+}
+.projectDetail.harut .overview .imgBox img {
+    width: calc((100% - 2rem)/2);
+    max-width: 30rem;
+}
 /* HARUT END */
 /* TONPAY START */
 .projectDetail.tonpay .overview {
@@ -318,24 +324,10 @@
 .projectDetail.tonpay .overview .c_inner {
     align-items: flex-start;
 }
-.projectDetail.tonpay .overview .imgBox {
-    position: relative;
-    height: 40rem;
-}
 .projectDetail.tonpay .overview .imgBox img {
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-    transform: translateY(50%);
-    max-width: 40rem; 
-    width :100%;
+    width: 100%;
     height: auto;
-    object-fit: contain;
-}
-.projectDetail.tonpay .overview .imgBox img:last-child {
-    left: 0;
-    right: unset;
-    bottom: 30%;
+    box-shadow: var(--box-shadow);
 }
 .projectDetail.tonpay .gui .c_flex_wrap {
     justify-content: space-between;
@@ -376,10 +368,10 @@
 .projectDetail.nuovoseoul .persona .c_flex_wrap {
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10rem;
+    gap: 6rem;
 }
 .projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox {
-    width: calc((100% - 10rem)/2);
+    width: calc((100% - 6rem)/2);
 }
 .projectDetail.nuovoseoul .persona .c_flex_wrap .flexBox:nth-child(2) {
     margin-top: 20rem;
@@ -501,9 +493,7 @@
     color: var(--font-color-mid);
 }
 @media screen and (max-width: 600px) {
-    .projectDetail .overview .imgBox {
-        width: 100%;
-    }
+
     .projectDetail.nuovoseoul .persona .c_flex_wrap {
         flex-direction: column;
         gap: var(--space-xxx-large);

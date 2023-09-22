@@ -52,11 +52,44 @@
     font-weight: 200;
 }
 .main .case_studies .projectWrap .thumbnailWrap {
-    max-width: 60rem;
+    padding: 4rem;
+    max-width: 64rem;
+    max-height: 48rem;
+    border-radius: 4rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.main .case_studies .projectWrap .thumbnailWrap::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.022);
+    backdrop-filter: blur(4px);
+}
+.main .case_studies .projectWrap .thumbnailWrap img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-mid);
+    overflow: hidden;
 }
 .main .case_studies .projectWrap .thumbnailWrap:hover {
     max-width: 68rem;
 }
+.main .case_studies .projectWrap .thumbnailWrap .layout_row {
+    display: flex;
+    gap: 2rem;
+}
+.main .case_studies .projectWrap .thumbnailWrap .layout_row img {
+    width: calc((100% - 2rem)/2);
+}
+
 .main .c_more_btn {
     margin-top: var(--space-xx-large);
 }
@@ -106,6 +139,19 @@
     .main .contact .contactWrap a {
         width: 100%;
     }
-  
 }
 /* 메인배너 END */
+
+
+.main .case_studies.harut .projectWrap .thumbnailWrap {
+    background: url("~@/assets/images/project/harut/overview_bg.jpg")no-repeat center/cover;
+}
+.main .case_studies.tonpay .projectWrap .thumbnailWrap {
+    background: url("~@/assets/images/project/tonpay/thumbnail.png")no-repeat center/cover;
+}
+.main .case_studies.nuovoseoul .projectWrap .thumbnailWrap {
+    background: url("~@/assets/images/project/nuovoseoul/overview_bg.jpg")no-repeat center/cover;
+}
+.main .case_studies.grandcasa .projectWrap .thumbnailWrap {
+    background: url("~@/assets/images/project/grandcasa/overview_bg.jpg")no-repeat center/cover;
+}

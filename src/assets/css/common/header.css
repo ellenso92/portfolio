@@ -31,9 +31,9 @@ header .gnb ul li a {
 header .gnb ul {
     gap: 6rem;
 }
-header .gnb ul .on a {
-    opacity: 1;
-}
+header .gnb ul li.active {
+    color: red;
+  }
 @media screen and (max-width: 1000px) {
     header .gnb {
         display: none;

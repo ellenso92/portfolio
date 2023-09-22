@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 :root{
     /* 컬러 */
-    --primary-color: #695DF2;           /* 메인 색 */
-    --primary-color-effect: #695DF2;    /* 메인 색 효과 (호버) */
+    --primary-color: #ec7dc9;           /* 메인 색 */
+    --primary-color-effect: #ec7dc9;    /* 메인 색 효과 (호버) */
     --primary-color-contrast: #fff;     /* 메인 색 반대 (글씨등) */
     
     --disabled-color: #999;     /* 비활성화 색 */
@@ -280,4 +280,42 @@ form .inputWrap.c_flex_wrap {
 }
 main {
     margin-top: var(--header-height);
+}
+.topBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4.6rem;
+    height: 4.6rem;
+    line-height: 4.6rem;
+    font-size: var(--font-size-x-small);
+    text-align: center;
+    font-weight: var(--font-w-mid);
+    background-color: var(--primary-color);
+    backdrop-filter: blur(6px);
+    border-radius: var(--border-radius-full);
+    box-shadow: var(--box-shadow);
+}
+#scroll-btn {     
+    position: fixed;
+    bottom: 10%;
+    right: 10%;      
+    opacity: 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-full);
+    font-size: 1.2rem;    
+    font-weight: var(--font-w-mid);
+    transition: opacity 0.5s, transform 0.5s;
+    box-shadow: var(--box-shadow);
+}
+#scroll-btn.show {      
+    opacity: 1;  
+    transition: opacity 1s, transform 1s;     
 }
